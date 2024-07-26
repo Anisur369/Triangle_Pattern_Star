@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Pattern 7 - Tam</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000c18;
+            color: greenyellow;
+            text-shadow: 0px 0px 8px greenyellow;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let n=9;
+        let string="";
+        let i=1;
+        for(i;i<n;i++){
+            let j=n;
+            for(j;j>1;j--){
+                if(i>j){
+                    string+="* ";
+                }else{
+                    string+=" ";
+                }
+            }
+            string+="<br>";
+        }
+        document.write(`<pre>${string}</pre>`)
+    </script>
+</body>
+</html>
